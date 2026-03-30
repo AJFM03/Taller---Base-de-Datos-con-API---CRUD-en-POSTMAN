@@ -55,8 +55,6 @@ def obtener_proveedores():
             'direccion': fila[4]
         })
     return jsonify(proveedores), 200
-
-
 # SELECT — Consultar uno por ID (GET)
 @app.route('/proveedores/<int:id>', methods=['GET'])
 def obtener_proveedor(id):
